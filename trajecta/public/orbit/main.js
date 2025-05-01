@@ -22571,7 +22571,7 @@ JPL.OrbitViewer = function (config) {
     controls.setDistance(JPL.Config.controls.distance);
     controls.setMaxScale(JPL.Config.controls.maxScale);
     controls.setMinScale(JPL.Config.controls.minScale);
-    controls.setScale(JPL.Config.controls.scale);
+    controls.setScale(100);
     controls.zoomType = JPL.Scale;
     controls.update(true);
 

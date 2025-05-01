@@ -441,7 +441,10 @@ $( function() {
 
         }
     });
-    orbitViewer.setFocusOn("SSB");
+    // orbitViewer.setFocusOn("Earth");
+    // onFocusChanged("Earth");
+    urlController.setLookAt("Earth");
+    orbitViewer.loadSmallBody("25544", onSmallBodyLoaded);
 
     document.addEventListener( 'mouseup', function(evt) {
         //urlController.resetViewFrom();
@@ -708,4 +711,5 @@ $( function() {
     }
 
     orbitViewer.start();
+    
 });
