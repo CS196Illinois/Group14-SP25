@@ -441,10 +441,10 @@ $( function() {
 
         }
     });
-    // orbitViewer.setFocusOn("Earth");
-    // onFocusChanged("Earth");
+    orbitViewer.setFocusOn("Earth");
+    onFocusChanged("Earth");
     urlController.setLookAt("Earth");
-    orbitViewer.loadSmallBody("25544", onSmallBodyLoaded);
+    // orbitViewer.loadSmallBody("25544", onSmallBodyLoaded);
 
     document.addEventListener( 'mouseup', function(evt) {
         //urlController.resetViewFrom();

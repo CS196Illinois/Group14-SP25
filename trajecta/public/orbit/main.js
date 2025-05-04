@@ -20742,7 +20742,7 @@ JPL.SmallBodyLoader = function (config) {
 
 
 
-        var url = JPL.Config.sbdb + "?{search}={identifier}&anc-data=true&phys-par=true&ca-data=true&discovery=true&full-prec=true";
+        var url = "/sbdb?{search}={identifier}&anc-data=true&phys-par=true&ca-data=true&discovery=true&full-prec=true";
         url = url.replace("{search}", (useDes) ? "des" : "sstr")
                  .replace("{identifier}", identifier);
 
@@ -23039,6 +23039,7 @@ JPL.OrbitViewer = function (config) {
 
         new JPL.SmallBodyLoader({}).load(identifier, function(def) {
             console.info(def);
+            console.log("Loaded")
 
             createBodyWithDef(def, onComplete);
         }, function () {
